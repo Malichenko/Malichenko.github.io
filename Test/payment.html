@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Piastrix</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="brand">
+                    <a href="index.html"><img src="img/logo_white_animated.svg" alt="Piastrix" class="brand__img"></a>
+                </div>
+                <div class="header__inner">
+                    <div class="mail">
+                        <a href="mailto:support@piastrix.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@piastrix.com</span>
+                        </a>
+                    </div>
+                    <ul class="lang">
+                        <li class="lang__item"><a href="#">English</a></li>
+                        <li class="lang__item"><a href="#">Русский</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="invoice">
+            <div class="container">
+                <div class="invoice__wrapper">
+                    <div class="invoice__inner">
+                        <h2>Номер инвоиса 101</h2>
+                        <div class="invoice__info">
+                            <div class="invoice__info-item">
+                                <span class="name">Получатель:</span>
+                                <span class="value">test sHop</span>
+                            </div>
+                            <div class="invoice__info-item">
+                                <span class="name">Описание:</span>
+                                <span class="value">Test invoice</span>
+                            </div>
+                        </div>
+                        <div class="invoice__price">
+                            <div class="invoice__price-summ">Сумма:</div>
+                            <div class="invoice__price-amount">10 RUB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="submit__wrapper d-flex flex-column align-items-center">
+                        <img src="img/bitcoin.png" alt="bitcoin" class="submit__img">
+                        <div class="form-group d-flex flex-column">
+                            <form id="sendMail">
+                                <input type="email" placeholder="Введите Ваш Email" id="email">
+                            </form>
+                            <button class="submit__btn" form="sendMail">оплатить</button>
+                            <p class="status-message" id="status-message"></p>
+                        </div>
+                        <div>
+                            <form id="submit__form" method="POST" action="https://pay.piastrix.com/ru/pay"
+                                accept-charset="UTF-8">
+                                <input type="hidden" name="amount" id="amount" />
+                                <input type="hidden" name="currency" id="currency" />
+                                <input type="hidden" name="shop_id" id="shop_id" />
+                                <input type="hidden" name="sign" id="sign" />
+                                <input type="hidden" name="payway" id="payway" />
+                                <input type="hidden" name="shop_order_id" id="shop_order_id" />
+                                <input type="hidden" name="description" id="description" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank" class="footer__contacts">контакты</a>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <img src="img/visa.png" alt="visa">
+                </li>
+                <li class="footer__list-item">
+                    <img src="img/masterCard.png" alt="masterCard">
+                </li>
+                <li class="footer__list-item">
+                    <img src="img/pciDss.png" alt="pciDss">
+                </li>
+            </ul>
+            <ul class="lang">
+                <li class="lang__item"><a href="#">English</a></li>
+                <li class="lang__item"><a href="#">Русский</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/main.min.js"></script>
+</body>
+
+</html>

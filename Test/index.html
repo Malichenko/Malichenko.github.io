@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en,ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Piastrix</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="brand">
+                    <a href="index.html"><img src="img/logo_white_animated.svg" alt="Piastrix" class="brand__img"></a>
+                </div>
+                <div class="header__inner">
+                    <div class="mail">
+                        <a href="mailto:support@piastrix.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@piastrix.com</span>
+                        </a>
+                    </div>
+                    <ul class="lang">
+                        <li class="lang__item"><a href="#">English</a></li>
+                        <li class="lang__item"><a href="#">Русский</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="invoice">
+            <div class="container">
+                <div class="invoice__wrapper">
+                    <div class="invoice__inner">
+                        <h2>Номер инвоиса 101</h2>
+                        <div class="invoice__info">
+                            <div class="invoice__info-item">
+                                <span class="name">Получатель:</span>
+                                <span class="value">test sHop</span>
+                            </div>
+                            <div class="invoice__info-item">
+                                <span class="name">Описание:</span>
+                                <span class="value">Test invoice</span>
+                            </div>
+                        </div>
+                        <div class="invoice__price">
+                            <div class="invoice__price-summ">Сумма:</div>
+                            <div class="invoice__price-amount">10 RUB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paymenttype">
+            <div class="container">
+                <div class="row flex-column">
+                    <h2>Методы оплаты</h2>
+                    <div class="paymenttype__content flex-wrap">
+                        <div class="col-sm-12 col-md-4 col-lg ">
+                            <a href="payment.html?method=bitcoin" class="paymenttype__item">
+                                <img src="img/bitcoin.png" alt="bitcoin">
+                                <span>Bitcoin</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg ">
+                            <a href="payment.html?method=visa&mastercard" class="paymenttype__item">
+                                <img src="img/visa_mc.png" alt="visa&mastercard">
+                                <span>Visa/Mastercard</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg ">
+                            <a href="payment.html?method=MTS" class="paymenttype__item">
+                                <img src="img/mts.png" alt="MTS">
+                                <span>MTS</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg ">
+                            <a href="payment.html?method=webmoney" class="paymenttype__item">
+                                <img src="img/webmoney.png" alt="webmoney">
+                                <span>Webmoney</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg ">
+                            <a href="payment.html?method=payeer" class="paymenttype__item">
+                                <img src="img/payeer.png" alt="payeer">
+                                <span>Payer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank" class="footer__contacts">контакты</a>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <img src="img/visa.png" alt="visa">
+                </li>
+                <li class="footer__list-item">
+                    <img src="img/masterCard.png" alt="masterCard">
+                </li>
+                <li class="footer__list-item">
+                    <img src="img/pciDss.png" alt="pciDss">
+                </li>
+            </ul>
+            <ul class="lang">
+                <li class="lang__item"><a href="#">English</a></li>
+                <li class="lang__item"><a href="#">Русский</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.min.js"></script>
+</body>
+
+</html>
